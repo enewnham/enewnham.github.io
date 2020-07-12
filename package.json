@@ -1,0 +1,28 @@
+{
+  "name": "enewnham.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio of random acts of code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enewnham/enewnham.github.io.git"
+  },
+  "keywords": [
+    "Elliot",
+    "Newnham"
+  ],
+  "author": "Elliot Newnham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enewnham/enewnham.github.io/issues"
+  },
+  "homepage": "https://github.com/enewnham/enewnham.github.io#readme",
+  "dependencies": {
+    "gatsby": "^2.24.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
