@@ -1,26 +1,17 @@
+/// <reference types="@emotion/react/types/css-prop" />
 import React from "react";
+import { Title2, Title, SubTitle } from "../components";
 import Layout from "../components/Layout";
+import TitleAnchor from "../components/TitleAnchor";
 
 export default () => (
   <Layout>
-    <h1>Hey there and apple welcome to my attempt at social media 👋</h1>
+    <Title>Elliot Newnham</Title>
 
-    <li>
-      <ul>
-        📫{" "}
-        <a href="mailto: elliot.newnham@gmail.com">elliot.newnham@gmail.com</a>
-      </ul>
-      <ul>
-        Are those "under construction" placeholders from the 90's still a thing?
-      </ul>
-      <ul>CSS is overrated</ul>
-    </li>
-
-    <h3>
-      <a href="https://github.com/enewnham/Orleans.Providers.MSSQLDapper">
-        Orleans.Providers.MSSQLDapper
-      </a>
-    </h3>
+    <Title2>GitHub Projects</Title2>
+    <TitleAnchor href="https://github.com/enewnham/Orleans.Providers.MSSQLDapper">
+      Orleans.Providers.MSSQLDapper
+    </TitleAnchor>
     <p>
       Optimized Orleans providers for Microsoft SQL Server for In-Memory OLTP
       and Natively Compiled Stored Procedures
