@@ -24,8 +24,7 @@ export default () => (
     <p>
       A gatsby JS resume written using best practices in react, styled
       components, and typescript. While I'm not a full-time front-end engineer I
-      have a solid foundation knowledge in modern techniques in building
-      websites.
+      have a solid foundation in modern web technologies.
     </p>
   </Layout>
 );
