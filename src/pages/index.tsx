@@ -2,11 +2,12 @@
 import React from "react";
 import { Title2, Title, SubTitle } from "../components";
 import Layout from "../components/Layout";
+import Heading from "../components/Heading";
 import TitleAnchor from "../components/TitleAnchor";
 
 export default () => (
   <Layout>
-    <Title>Elliot Newnham</Title>
+    <Heading />
 
     <Title2>GitHub Projects</Title2>
     <TitleAnchor href="https://github.com/enewnham/Orleans.Providers.MSSQLDapper">
