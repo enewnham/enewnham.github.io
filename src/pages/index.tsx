@@ -1,9 +1,9 @@
 /// <reference types="@emotion/react/types/css-prop" />
 import React from "react";
-import { Title2, Title, SubTitle } from "../components";
-import Layout from "../components/Layout";
-import Heading from "../components/Heading";
-import TitleAnchor from "../components/TitleAnchor";
+import { Title2 } from "../components";
+import { Layout } from "../components/Layout";
+import { Heading } from "../components/Heading";
+import { TitleAnchor } from "../components/TitleAnchor";
 
 export default () => (
   <Layout>

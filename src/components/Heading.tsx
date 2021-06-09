@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React, { FC } from "react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { header2, primaryLight } from "./variables";
@@ -16,18 +16,18 @@ const Name = styled.h1`
   margin: 0;
 `;
 
-const ContactDetail = ({
+const ContactDetail: FC<{ icon: IconDefinition; href: string }> = ({
   icon,
   href,
   children,
-}: PropsWithChildren<{ icon: IconDefinition, href: string }>) => (
+}) => (
   <div>
     <FontAwesomeIcon color={primaryLight} icon={icon} />{" "}
     <UnstyledAnchor href={href}>{children}</UnstyledAnchor>
   </div>
 );
 
-const JobTitle = ({ children }: PropsWithChildren<{}>) => (
+const JobTitle: FC = ({ children }) => (
   <p
     css={css`
       ${header2}
@@ -40,18 +40,22 @@ const JobTitle = ({ children }: PropsWithChildren<{}>) => (
         border-bottom: 1px solid;
       `}
     >
-      Full Stack Engineer | Embedded Software Engineer | Software Manager
+      {children}
     </span>
   </p>
 );
 
-export default () => (
+export const Heading: FC = () => (
   <div>
     <Name>Elliot Newnham</Name>
     <JobTitle>
       Full Stack Engineer | Embedded Software Engineer | Software Manager
     </JobTitle>
-    <ContactDetail icon={faEnvelope} href="mailto:elliot.newnham@gmail.com">elliot.newnham@gmail.com</ContactDetail>
-    <ContactDetail icon={faGithub} href="https://github.com/enewnham">https://github.com/enewnham</ContactDetail>
+    <ContactDetail icon={faEnvelope} href="mailto:elliot.newnham@gmail.com">
+      elliot.newnham@gmail.com
+    </ContactDetail>
+    <ContactDetail icon={faGithub} href="https://github.com/enewnham">
+      https://github.com/enewnham
+    </ContactDetail>
   </div>
 );

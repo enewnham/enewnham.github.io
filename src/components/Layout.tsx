@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React, { FC } from "react";
 import { css, Global } from "@emotion/react";
 import styled from "@emotion/styled";
 import Helmet from "react-helmet";
@@ -10,7 +10,7 @@ const Page = styled.div`
   color: #333333;
 `;
 
-export default ({ children }: PropsWithChildren<{}>) => (
+export const Layout: FC = ({ children }) => (
   <Page>
     <Global
       styles={css`
