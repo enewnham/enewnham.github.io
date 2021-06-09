@@ -1,12 +1,14 @@
 import React, { PropsWithChildren } from "react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { header2, secondaryDark } from "./Variables";
+import { header2, primaryLight } from "./variables";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   IconDefinition,
 } from "@fortawesome/free-regular-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { UnstyledAnchor } from ".";
 
 const Name = styled.h1`
   font-size: 30px;
@@ -14,18 +16,33 @@ const Name = styled.h1`
   margin: 0;
 `;
 
-const JobTitle = styled.p`
-  ${header2}
-  margin: 0;
-`;
-
 const ContactDetail = ({
   icon,
+  href,
   children,
-}: PropsWithChildren<{ icon: IconDefinition }>) => (
+}: PropsWithChildren<{ icon: IconDefinition, href: string }>) => (
   <div>
-    <FontAwesomeIcon color={secondaryDark} icon={icon} /> {children}
+    <FontAwesomeIcon color={primaryLight} icon={icon} />{" "}
+    <UnstyledAnchor href={href}>{children}</UnstyledAnchor>
   </div>
+);
+
+const JobTitle = ({ children }: PropsWithChildren<{}>) => (
+  <p
+    css={css`
+      ${header2}
+      margin-top: 0;
+    `}
+  >
+    <span
+      css={css`
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid;
+      `}
+    >
+      Full Stack Engineer | Embedded Software Engineer | Software Manager
+    </span>
+  </p>
 );
 
 export default () => (
@@ -34,6 +51,7 @@ export default () => (
     <JobTitle>
       Full Stack Engineer | Embedded Software Engineer | Software Manager
     </JobTitle>
-    <ContactDetail icon={faEnvelope}>elliot.newnham@gmail.com</ContactDetail>
+    <ContactDetail icon={faEnvelope} href="mailto:elliot.newnham@gmail.com">elliot.newnham@gmail.com</ContactDetail>
+    <ContactDetail icon={faGithub} href="https://github.com/enewnham">https://github.com/enewnham</ContactDetail>
   </div>
 );
