@@ -1,13 +1,18 @@
 import React, { FC } from "react";
-import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 import { StyledAnchor } from ".";
 
-const Section = styled.p`
-  padding-bottom: 0.5rem;
-`;
-
 export const TitleAnchor: FC<{ href: string }> = ({ href, children }) => (
-  <Section>
-    <StyledAnchor href={href}>{children}</StyledAnchor>
-  </Section>
+  <p>
+    <StyledAnchor
+      css={css`
+        margin-bottom: 0;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+      `}
+      href={href}
+    >
+      {children}
+    </StyledAnchor>
+  </p>
 );
