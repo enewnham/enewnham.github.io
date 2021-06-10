@@ -1,6 +1,12 @@
 /// <reference types="@emotion/react/types/css-prop" />
 import React from "react";
-import { SubTitle, Title2, StyledAnchor, MutedSmall } from "../components";
+import {
+  SubTitle,
+  Title2,
+  StyledAnchor,
+  MutedSmall,
+  Title3,
+} from "../components";
 import { Layout } from "../components/Layout";
 import { Heading } from "../components/Heading";
 import { TitleAnchor } from "../components/TitleAnchor";
@@ -65,5 +71,11 @@ export default () => (
       mobx flow yield functions. As a manager it is important to routinely find
       technologies to improve developer quality .
     </p>
+    <Title2>Education</Title2>
+    <Title3>Georgia Institute of Technology</Title3>
+    <SubTitle>
+      B.S. Electrical Engineering - Systems &amp; Controls Engineering | 2009 -
+      2013
+    </SubTitle>
   </Layout>
 );

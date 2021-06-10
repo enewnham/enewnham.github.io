@@ -41,3 +41,9 @@ export const StyledAnchor = styled.a`
     box-shadow: #eefbff 0px -1.2em 0px inset;
   }
 `;
+
+export const Title3 = styled.h3`
+  margin-bottom: 0;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+`;
