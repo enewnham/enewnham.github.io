@@ -27,11 +27,11 @@ export default () => (
     <Title2>Work Experience</Title2>
     <TitleAnchor href="https://mri-inc.net/">MRI, Inc.</TitleAnchor>
     <SubTitle>
-      Manager of{" "}
+      Technical Lead Engineer | Manager of{" "}
       <StyledAnchor href="https://portal.mri-inc.net/landing">
         SmartVu®
       </StyledAnchor>{" "}
-      Development | Senior Software Engineer | 2013 - Current
+      Development | 2013 - Current
     </SubTitle>
     <p>
       Lead engineer for an expansive distributed micro-services IoT dashboard
@@ -55,6 +55,14 @@ export default () => (
       and Natively Compiled Stored Procedures. Using distributed tracing and SQL
       Server analyzer a significant bottleneck was mitigated.
     </p>
+    <TitleAnchor href="https://github.com/enewnham/Orleans.Providers.MSSQLDapper">
+      minimal-spa
+    </TitleAnchor>
+    <p>
+      Modern C# development skeleton for proof-of-concepts and coding
+      challenges. Using the latest language features of C# and typescript you
+      can quickly prototype a new webapp.
+    </p>
     <TitleAnchor href="https://github.com/enewnham/enewnham.github.io">
       enewnham.github.io
     </TitleAnchor>
@@ -69,7 +77,7 @@ export default () => (
     <p>
       Fork for a typescript transformer that converts async/await functions to
       mobx flow yield functions. As a manager it is important to routinely find
-      technologies to improve developer quality .
+      technologies to improve developer quality.
     </p>
     <Title2>Education</Title2>
     <Title3>Georgia Institute of Technology</Title3>
